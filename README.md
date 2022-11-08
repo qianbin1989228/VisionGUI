@@ -11,14 +11,14 @@ If you are interested in this project, you can also participate in. Looking forw
 
 ## 1. [Prepare Environment](./doc/PrepareEnvironment.md)
 
-## 2. [Build Framework](./doc/2.md)
+## 2. [Build Framework](./doc/Build_Framework.md)
 
-## 3. [Develop Classification Module](./doc/3.md)
+## 3. [Develop Classification Module](./doc/Develop_Classification_Module.md)
 
-## 4. [Develop Segmentation Module](./doc/4.md)
+## 4. [Develop Segmentation Module](./doc/Develop_Segmentation_Module.md)
 
-## 5. [Develop Object Detection Module](./doc/5.md)
+## 5. [Develop Object Detection Module](./doc/Develop_Object_Detection_Module.md)
 
-## 6. [Develop Lable Module](./doc/6.md)
+## 6. [Develop Lable Module](./doc/Develop_Lable_Module.md)
 
-## 7. [Develop Product Module](./doc/7.md)
+## 7. [Develop Product Module](./doc/Develop_Product_Module.md)
