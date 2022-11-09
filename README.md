@@ -1,8 +1,8 @@
-# GUI Vision Platform for Deep Learning 
+# GUI based Deep Learning Platform for Compute Vision 
 
-I want to develop a GUI based low code deep learning platform, which will be implemented by PaddlePaddle and Flask.
+A gui based low code deep learning platform for compute vision, which is developted by [paddlepaddle](https://github.com/PaddlePaddle/Paddle) and [flask](https://flask.palletsprojects.com/).
 
-PaddlePaddle is a popular deep learning framework similar to Pytorch, which is developed and open source by Baidu team. Based on PaddlePaddle, Baidu team has developed many algorithm suites, such as PaddleClas for image classification, PaddleSeg for image segmentation, PaddleDetection for object detection, etc. In order to facilitate developing AI products by non AI practitioners, this project starts to build a pure GUI low code platform for deep learning, and encapsulates relevant algorithm suites with unified interfaces. Users can use the GUI Platform to complete annotation, training, reasoning and deployment of common deep learning steps. Considering that all suite algorithms of paddlepaddle are implemented by python, we will adopt falsk as the backend for intergration, which is a purely python web framework. 
+Paddlepaddle is a popular open-sourced deep learning framework which has similar encoding style like pytorch. Based on paddlepaddle, many great algorithm suites have been developed, such as [paddleclas](https://github.com/PaddlePaddle/PaddleClas) for image classification, [paddleseg](https://github.com/PaddlePaddle/PaddleSeg) for image segmentation, [paddledetection](https://github.com/PaddlePaddle/PaddleDetection) for object detection, etc. In order to facilitate developing compute vision products for non-specialists, this project will build a pure gui deep learning platform of compute vision. Users can use this platform to complete usual deep learning steps, such as data annotation, training, validation and deployment, even whthout any professional knowledge. Considering that all suite algorithms of paddlepaddle are implemented by python, we will adopt falsk as the backend for restful api development, which is a purely efficient python web framework. 
 
 修改
 
