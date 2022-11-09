@@ -10,7 +10,6 @@ If you are interested in this project, you can also participate in. Looking forw
 
 ## 1. [Prepare Environment](./doc/PrepareEnvironment.md)
 
-Developing...
 
 ## 2. [Build Framework](./doc/Build_Framework.md)
 

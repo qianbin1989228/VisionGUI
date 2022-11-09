@@ -63,5 +63,8 @@ paddle.utils.run_check()
 
 If "`PaddlePaddle is installed successfully!`" appears, it means the installation was successful.
 
-
-
+## **5. Install Other Dependencies**
+```bash
+pip install -r requirements.txt
+```
+If the download speed is too slow, you can add "`-i https://mirror.baidu.com/pypi/simple`" to the above command. 
