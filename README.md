@@ -4,6 +4,7 @@ I want to develop a GUI based low code deep learning platform, which will be imp
 
 PaddlePaddle is a popular deep learning framework similar to Pytorch, which is developed and open source by Baidu team. Based on PaddlePaddle, Baidu team has developed many algorithm suites, such as PaddleClas for image classification, PaddleSeg for image segmentation, PaddleDetection for object detection, etc. In order to facilitate developing AI products by non AI practitioners, this project starts to build a pure GUI low code platform for deep learning, and encapsulates relevant algorithm suites with unified interfaces. Users can use the GUI Platform to complete annotation, training, reasoning and deployment of common deep learning steps. Considering that all suite algorithms of paddlepaddle are implemented by python, we will adopt falsk as the backend for intergration, which is a purely python web framework. 
 
+修改
 
 
 ## 1. [Prepare Environment](./doc/1.md)
