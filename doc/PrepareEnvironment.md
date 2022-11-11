@@ -46,7 +46,7 @@ Refer to the [official website](https://www.paddlepaddle.org.cn/en/install/quick
 You need to choose the correct config according to your PC environment as below:
 
 <div align="center">
-<img src="doc/../img/1.jpg"  width="70%"> 
+<img src="./doc/../img/1.jpg"  width="70%"> 
 </div>
 
 Then use the command given by the website to install PaddlePaddle
