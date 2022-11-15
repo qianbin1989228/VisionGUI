@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +14,11 @@
     <link rel="stylesheet" href="/static/css/flag-icon.min.css">
     <link rel="stylesheet" href="/static/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="/static/scss/style.css">
+
+    <script src="/static/js/home.js"></script>
 </head>
 
-<body>
+<body onload="get_system_info()" oncontextmenu="self.event.returnValue=false">
     <!-- Left Panel -->
     <aside id="left-panel" class="left-panel">
         <nav class="navbar navbar-expand-sm navbar-default">
@@ -26,7 +27,6 @@
                     aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <!-- <a class="navbar-brand" href="./"><img alt="VisionGUI"></a> -->
                 <a class="navbar-brand" href="./"><h3>VisionGUI</h3></a>
                 <a class="navbar-brand hidden" href="./"><img alt=""></a>
             </div>
@@ -82,36 +82,88 @@
                 </div>
   
             </div>
-
         </header><!-- /header -->
-        <!-- Header-->
-        <div class="content mt-3">
-            <div class="col-xl-3 col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="stat-widget-one">
-                            <div class="stat-icon dib"><i class="ti-thought text-primary border-primary"></i></div>
-                            <div class="stat-content dib">
-                                <div class="stat-text">GPU Memory</div>
-                                <div class="stat-digit">5G /24G</div>
-                            </div>
+
+        <!-- status -->
+        <div class="col-sm-12">
+            <div class="alert  alert-danger alert-dismissible fade show" role="alert" id="statusContentCtl">
+                <span class="badge badge-pill badge-danger">Error</span> <span id="statusShowCtl">You successfully read this important alert message.</span>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- System Information -->
+        <div class="col-xl-12 col-lg-12">
+            <section class="card">
+                <div class="twt-feed blue-bg">
+                    <div class="corner-ribon black-ribon">
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="fa fa-cubes wtt-mark"></div>
+
+                    <div class="media">
+                        
+                        <div class="media-body">
+                            <h2 class="text-white display-6" id="systemNameCtl"></h2>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="weather-category twt-category">
+                    <ul>
+                        <li>
+                            <h5>Python</h5>
+                            <h6 id="pythonVersionCtl"></h6>
+                        </li>
+                        <li>
+                            <h5>CUDA</h5>
+                            <h6 id="cudaVersionCtl"></h6>
+                        </li>
+                        <li>
+                            <h5>CuDNN</h5>
+                            <h6 id="cudnnVersionCtl"></h6>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="twt-footer" id="paddleVersionCtl">
+                    
+                </footer>
+            </section>
+        </div>
 
-        </div> <!-- .content -->
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-3">
+                <div class="card-body pb-0">
+                    <div class="dropdown float-right">
+                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                            <i class="fa fa-cog"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu-content">
+                                <a class="dropdown-item" href="#">Release</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="mb-0">
+                        <span>GPU 0</span>
+                    </h4>
+                    <p class="text-light">Memory-Usage &nbsp;&nbsp; <strong>0 MiB / 12 MiB<strong></strong></p>
+                    <p class="text-light">Temperature &nbsp;&nbsp; <strong>43 C<strong></strong></p>
+                </div>
+
+            </div>
+        </div>
     </div><!-- /#right-panel -->
 
-    <!-- Right Panel -->
-
+    <!-- other js -->
     <script src="/static/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="/static/js/popper.min.js"></script>
     <script src="/static/js/plugins.js"></script>
     <script src="/static/js/main.js"></script>
+
     <script src="/static/js/lib/chart-js/Chart.bundle.js"></script>
-    <script src="/static/js/dashboard.js"></script>
+    <script src="/static/js/dashboard.js"></script> 
     <script src="/static/js/widgets.js"></script>
 </body>
-
 </html>
